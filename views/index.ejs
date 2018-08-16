@@ -1,0 +1,20 @@
+<% include header %>
+  <% if(result){ %>
+    <% result.forEach((v)=>{ %>
+      <div class="box claerfix">
+        <img src=<%= v.img %> alt="预览图">
+        <p>
+          <%= v.title %></p>
+          <p>
+            下载地址：<br />
+            <a href= <%= v.down %> >
+              <%= v.down %>
+            </a>
+          </p>
+          
+    </div>
+
+  <% }) %>
+            <% } %>
+
+              <% include footer %>
